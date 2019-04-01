@@ -63,6 +63,7 @@
         <title>lista</title>
     </head>
     <body>
+        
         <h2>Clientes Cadastrados</h2>
         <table border="1">
             <tr><th>ID</th>
@@ -125,19 +126,16 @@
                  <td><%=c.getCnpj()%></td>
                  <td><%=c.getEmail()%></td>
                  <td><%=c.getTelefone()%></td>
-                 <td> <%=c.getEndereco()%> </td>
+                 <td><%=c.getEndereco()%></td>
                  <td>
                      <a href="alterar_fornecedor.jsp?id=<%=id%>">Alterar</a>
-                     <a href="excluir_fornecedor.jsp?id=<%=id%>" >Excluir</a>  
-
+                     <a href="excluir_fornecedor.jsp?id=<%=id%>">Excluir</a>   
                  </td>
              </tr>
-    
+            
             
             <%}%>
         </table>
-
-           
-
-        <a href="adicionar_fornecedor.jsp"><button>Adicionar Fornecedor</button></a> 
+      
+        
         

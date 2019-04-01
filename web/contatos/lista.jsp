@@ -91,6 +91,6 @@
             
             <%}%>
         </table>
-        <a href="adicionar_fornecedor.jsp"><button>Adicionar Fornecedor</button></a>
+      
         
         
