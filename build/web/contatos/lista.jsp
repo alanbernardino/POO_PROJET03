@@ -10,6 +10,7 @@
 <%@page import="br.com.fatecpg.cadastro.Fornecedores"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <% // operaçoes CRUD %>
          <%
              if(request.getParameter("excluirFornecedor")!=null){
@@ -54,7 +55,6 @@
                 response.sendRedirect(request.getRequestURI());
             }   
          %>
-           
 
 <!DOCTYPE html>
 <html>
@@ -113,13 +113,14 @@
             <th>Endereço</th>
             <th>Comandos</th>
             </tr> 
+         
             <%
                 for (Fornecedores c: BDF.getFornecedores()){
                     int id = BDF.getFornecedores().indexOf(c); 
                 
                  
              %>
-            <tr>
+             <tr>
                  <td><%=id%></td>
                  <td><%=c.getNome()%></td>
                  <td><%=c.getRazaosocial()%></td>

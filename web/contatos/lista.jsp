@@ -10,6 +10,52 @@
 <%@page import="br.com.fatecpg.cadastro.Fornecedores"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<% // operaçoes CRUD %>
+         <%
+             if(request.getParameter("excluirFornecedor")!=null){
+                 int id = Integer.parseInt(request.getParameter("id"));
+                 BDF.getFornecedores().remove(id);
+                 response.sendRedirect(request.getRequestURI()); 
+             }
+         %>
+         
+         <%
+             if(request.getParameter("excluirCliente")!=null){
+                 int id = Integer.parseInt(request.getParameter("id"));
+                 BD.getClientes().remove(id);
+                 response.sendRedirect(request.getRequestURI()); 
+             }
+         %>
+         <%
+            if(request.getParameter("alterarFornecedor") !=null){
+                 int id = Integer.parseInt(request.getParameter("id"));
+                 Fornecedores f = new Fornecedores();
+                 f.setNome(request.getParameter("nomeFornecedor"));
+                 f.setRazaosocial(request.getParameter("razaoSocial"));
+                 f.setCnpj(request.getParameter("cnpj"));
+                 f.setEmail(request.getParameter("emailFornecedor"));
+                 f.setTelefone(request.getParameter("telefoneFornecedor"));
+                 f.setEndereco(request.getParameter("enderecoFornecedor"));
+                 BDF.getFornecedores().set(id, f);
+                 response.sendRedirect(request.getRequestURI());
+            }  
+         %>
+         <%
+            if(request.getParameter("alterarCliente")!=null){
+                int id = Integer.parseInt(request.getParameter("id"));
+                Clientes c = new Clientes();
+                c.setNome(request.getParameter("nomeCliente"));
+                c.setCpf(request.getParameter("cpf"));
+                c.setRg(request.getParameter("rg"));
+                c.setEmail(request.getParameter("emailCliente"));
+                c.setTelefone(request.getParameter("telefoneCliente"));
+                c.setEndereco(request.getParameter("enderecoCliente"));
+                BD.getClientes().set(id, c);
+                response.sendRedirect(request.getRequestURI());
+            }   
+         %>
+
 <!DOCTYPE html>
 <html>
     <head>
