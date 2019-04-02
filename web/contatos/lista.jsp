@@ -65,6 +65,7 @@
             <tr><th>ID</th>
             <th>Nome</th>
             <th>Rg</th>
+            <th>CPF</th>
             <th>Email</th>
             <th>Telefone</th>
             <th>Endereço</th>
@@ -80,6 +81,7 @@
                  <td><%=id%></td>
                  <td><%=c.getNome()%></td>
                  <td><%=c.getRg()%></td>
+                 <td><%=c.getCpf()%></td>
                  <td><%=c.getEmail()%></td>
                  <td><%=c.getTelefone()%></td>
                  <td><%=c.getEndereco()%></td>

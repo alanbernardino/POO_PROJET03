@@ -20,6 +20,7 @@ public class BD {
             Clientes c1 = new Clientes();
             c1.setNome("Fulano da Silva");
             c1.setRg("557865672");
+            c1.setCpf("557865672");
             c1.setEmail("fulano@gmail.com");
             c1.setTelefone("1334739998");
             c1.setEndereco("Rua dos Fulanos 459 Praia Grande");
