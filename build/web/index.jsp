@@ -25,7 +25,7 @@
         <br>Membros
         <br>Alan Bernardino
         <br>Marcos V M de Souza
-        <br> Mohammed Allahu Akbar
+        <br> Mohamad Allahu Akbar
     
     
     

@@ -42,7 +42,9 @@
         <title>lista</title>
     </head>
     <body>
-        
+       <b>Menu: <a href="../index.jsp"">HOME</a> |
+        <a href="lista.jsp">CLIENTES</a> |
+        <a href="lista_fornecedores.jsp">FORNECEDORES</a>
         <h2>Clientes Cadastrados</h2>
         <table border="1">
             <tr><th>ID</th>
