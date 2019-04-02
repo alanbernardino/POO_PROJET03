@@ -9,6 +9,23 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<%
+    if(request.getParameter("adicionarf")!=null){
+        if(request.getParameter("adicionarf").equals("Sim")){
+            Fornecedores c = new Fornecedores();
+            c.setNome(request.getParameter("nome"));
+            c.setRazaosocial(request.getParameter("razaosocial"));
+            c.setCnpj(request.getParameter("cnpj"));
+            c.setEmail(request.getParameter("email"));
+            c.setTelefone(request.getParameter("telefone"));
+            c.setEndereco(request.getParameter("endereco"));
+            BDF.getFornecedores().add(c);
+        }
+        response.sendRedirect(request.getRequestURI());
+    }
+%>
+
+
 <% // operaçoes CRUD %>
          <%
              if(request.getParameter("excluirFornecedor")!=null){
