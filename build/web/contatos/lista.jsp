@@ -10,7 +10,22 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <% // operaçoes CRUD %>
-        
+
+<%
+    if(request.getParameter("adicionar")!=null){
+        if(request.getParameter("adicionar").equals("Sim")){
+            Clientes c = new Clientes();
+            c.setNome(request.getParameter("nome"));
+            c.setRg(request.getParameter("rg"));
+            c.setCpf(request.getParameter("cpf"));
+            c.setEmail(request.getParameter("email"));
+            c.setTelefone(request.getParameter("telefone"));
+            c.setEndereco(request.getParameter("endereco"));
+            BD.getClientes().add(c);
+        }
+        response.sendRedirect(request.getRequestURI());
+    }
+%>
          
          <%
              if(request.getParameter("excluirCliente")!=null){
