@@ -1,0 +1,7 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<b>Menu: <a href="index.jsp">HOME</a> |
+  <a href="contatos/lista.jsp">CLIENTES</a> |
+   <a href="contatos/lista_fornecedores.jsp">FORNECEDORES</a>
+ 

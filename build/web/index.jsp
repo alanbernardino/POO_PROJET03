@@ -13,7 +13,30 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <a href="contatos/lista.jsp"> Fornecedores </a>
+        <%@include file="WEB-INF/jspf/menu.jspf"%>
+        
+    <center><h1>Sistema de Cadastro v 0.5</h1>
+        <br>
+        <h2>
+        <a href="contatos/lista.jsp">CLIENTES</a> |
+        <a href="contatos/lista_fornecedores.jsp">FORNECEDORES</a>
+        </h2>
+        
+        <br>Membros
+        <br>Alan Bernardino
+        <br>Marcos V M de Souza
+        <br> Mohammed Allahu Akbar
+    
+    
+    
+    
+    
+    </center>
+    
+        
+        
+        
+        
+        
     </body>
 </html>
