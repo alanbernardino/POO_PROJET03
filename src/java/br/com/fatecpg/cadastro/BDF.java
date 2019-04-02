@@ -17,12 +17,12 @@ public class BDF {
         if(fornecedor==null){
             fornecedor = new ArrayList<>();
             Fornecedores c1 = new Fornecedores();
-            c1.setNome("fulano");
+            c1.setNome("Ciclano de SOUZA");
             c1.setCnpj("213144234");
-            c1.setRazaosocial("213144234");
-            c1.setEmail("dkjkdjk@dsd");
-            c1.setTelefone("dkjkdjk@dsd");
-            c1.setEndereco("dkjkdjk@dsd");
+            c1.setRazaosocial("Ciclano Comércio de Peças");
+            c1.setEmail("ciclano@hotmail.com");
+            c1.setTelefone("1334890078");
+            c1.setEndereco("Travessa Jacinto Rego Pinto 69");
             fornecedor.add(c1);
             
             

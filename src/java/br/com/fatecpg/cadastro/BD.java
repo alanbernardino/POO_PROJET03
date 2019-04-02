@@ -18,11 +18,11 @@ public class BD {
         if(cliente==null){
             cliente = new ArrayList<>();
             Clientes c1 = new Clientes();
-            c1.setNome("fulano");
-            c1.setRg("213144234");
-            c1.setEmail("dkjkdjk@dsd");
-            c1.setTelefone("dkjkdjk@dsd");
-            c1.setEndereco("dkjkdjk@dsd");
+            c1.setNome("Fulano da Silva");
+            c1.setRg("557865672");
+            c1.setEmail("fulano@gmail.com");
+            c1.setTelefone("1334739998");
+            c1.setEndereco("Rua dos Fulanos 459 Praia Grande");
             cliente.add(c1);
             
             
